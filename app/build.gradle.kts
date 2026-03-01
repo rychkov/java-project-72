@@ -76,6 +76,8 @@ tasks.named("sonar") {
 dependencies {
     implementation("io.javalin:javalin:7.0.1")
     implementation("org.slf4j:slf4j-simple:2.0.17")
+    implementation("com.zaxxer:HikariCP:7.0.2")
+    implementation("com.h2database:h2:2.4.240")
 
     testImplementation(platform("org.junit:junit-bom:5.10.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")
