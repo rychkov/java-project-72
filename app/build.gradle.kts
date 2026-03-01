@@ -7,6 +7,7 @@ plugins {
     checkstyle
     `java-library`
     jacoco
+    id("io.freefair.lombok") version "8.13.1"
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 application {
@@ -74,6 +75,7 @@ tasks.named("sonar") {
 
 dependencies {
     implementation("io.javalin:javalin:7.0.1")
+    implementation("org.slf4j:slf4j-simple:2.0.17")
 
     testImplementation(platform("org.junit:junit-bom:5.10.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")
