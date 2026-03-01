@@ -4,7 +4,7 @@ import io.javalin.Javalin;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class App {
+public final class App {
 
     public Javalin getApp() {
         return Javalin.create(config -> {

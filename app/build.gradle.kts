@@ -1,11 +1,11 @@
 plugins {
     id("java")
+    application
     id("com.github.ben-manes.versions") version "0.53.0"
     id("com.diffplug.spotless") version "8.1.0"
     id("org.sonarqube") version "7.1.0.6387"
-    application
     checkstyle
-    `java-library`
+//    `java-library`
     jacoco
     id("io.freefair.lombok") version "8.13.1"
     id("com.github.johnrengelman.shadow") version "8.1.1"
